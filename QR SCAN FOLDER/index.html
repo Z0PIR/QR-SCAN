@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>QR SCAN</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale+1.0">
+
+
+  <style>
+
+    body {
+      background-color:  hsl(212, 45%, 89%);
+      width: 1440px;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+     
+    }
+    .base{
+      background-color: white;
+      display: flex;
+      width: 300px;
+      margin-top: 140px;
+      justify-content: center;
+      padding-bottom: 160px;
+      border-radius: 10px;
+      
+      
+    }
+    .upper{
+      margin-top: 15px;
+      margin-bottom: 20px;
+      display: inline-block;
+      width: 270px; 
+    }
+    .scan{
+      width: 270px;
+      border-radius: 10px;
+    }
+    .lower{
+      position: absolute;
+      display: inline-block;
+      padding-top: 300px;
+      text-align: center;
+    }
+    .upper1{
+      display: inline-block;
+      font-family: outfit;
+      font-size: 20px;
+      font-weight: 700;
+      color: hsl(218, 44%, 22%);
+      width: 250px;
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+    .lower1{
+      margin-top: 15px;
+      color: hsl(220, 15%, 55%);
+      font-family: outfit;
+      font-size: 14px;
+      font-weight: 400;
+      width: 250px;
+    }
+    
+    @media screen and (max-width: 375px){
+      
+      body {
+        width: auto;
+        margin-top: -50px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="base">
+    <div class="upper">
+      <img class="scan" src="images/image-qr-code.png">
+    </div>
+    <div class="lower">
+      <p class="upper1">Improve your front-end skills by building projects</p>
+      <p class="lower1">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
+</body>
+</html>
